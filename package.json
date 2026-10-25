@@ -1,0 +1,16 @@
+{
+  "name": "grow-and-learn",
+  "version": "1.0.0",
+  "description": "Grow and Learn daycare and preschool website",
+  "main": "src/script.js",
+  "scripts": {
+    "lint": "htmlhint \"src/**/*.html\" && stylelint \"src/**/*.css\" && eslint \"src/**/*.js\"",
+    "build": "node -e \"const fs=require('fs'); fs.rmSync('dist', {recursive: true, force: true}); fs.mkdirSync('dist', {recursive: true}); ['index.html', 'styles.css', 'script.js'].forEach(f => fs.copyFileSync('src/' + f, 'dist/' + f)); console.log('Build completed successfully.');\""
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0"
+  }
+}

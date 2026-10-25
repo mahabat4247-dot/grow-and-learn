@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grow and Learn - Daycare & Preschool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo">
+        <span class="logo-icon">🌱</span>
+        <span class="logo-text">Grow and Learn</span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Welcome Section (Home) -->
+    <section id="home" class="welcome-section">
+      <div class="container welcome-container">
+        <div class="welcome-text">
+          <h1>Nurturing Young Minds to Grow and Learn</h1>
+          <p>Welcome to Grow and Learn Daycare & Preschool! We provide a safe, warm, and fun environment where children explore, discover, and build a strong foundation for lifelong learning.</p>
+          <a href="#contact" class="btn btn-primary">Enroll Today</a>
+        </div>
+        <div class="welcome-image-box">
+          <div class="illustration-card">
+            <span class="badge-icon">🎨</span>
+            <p>Play, Learn & Grow Together</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-content">
+          <p>At Grow and Learn, we believe every child is unique and deserves a loving environment to thrive. Our experienced educators foster curiosity, creativity, and social skills through hands-on play and structured learning.</p>
+          <div class="highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🛡️</span>
+              <h3>Safe & Secure</h3>
+              <p>State-of-the-art safety protocols and child-proof spaces.</p>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">👩‍🏫</span>
+              <h3>Caring Teachers</h3>
+              <p>Certified early childhood educators passionate about teaching.</p>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🌿</span>
+              <h3>Healthy Habits</h3>
+              <p>Nutritious meals and daily outdoor play activities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs-section">
+      <div class="container">
+        <h2 class="section-title">Our Programs</h2>
+        <div class="program-cards">
+          <!-- Toddlers -->
+          <div class="card">
+            <div class="card-icon">👶</div>
+            <h3>Toddlers</h3>
+            <p class="age-range">Ages 1 - 2.5 Years</p>
+            <p>Developing motor skills, early speech, and social interaction through sensory play and structured routines.</p>
+          </div>
+          <!-- Preschool -->
+          <div class="card">
+            <div class="card-icon">🎨</div>
+            <h3>Preschool</h3>
+            <p class="age-range">Ages 2.5 - 4 Years</p>
+            <p>Encouraging independence, language expression, creativity, and foundational problem-solving abilities.</p>
+          </div>
+          <!-- Early Learning -->
+          <div class="card">
+            <div class="card-icon">📚</div>
+            <h3>Early Learning</h3>
+            <p class="age-range">Ages 4 - 5 Years</p>
+            <p>Preparing young minds for kindergarten with early reading, math concepts, science exploration, and teamwork.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>We would love to welcome you and your child for a tour!</p>
+            <ul class="info-list">
+              <li><strong>📍 Address:</strong> 123 Sunshine Lane, Suite 100, Happy Valley</li>
+              <li><strong>📞 Phone:</strong> (555) 123-4567</li>
+              <li><strong>✉️ Email:</strong> info@growandlearn.example.com</li>
+              <li><strong>⏰ Hours:</strong> Monday - Friday: 7:00 AM - 6:00 PM</li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <h3>Send Us a Message</h3>
+            <div class="form-group">
+              <label for="name">Parent's Name</label>
+              <input type="text" id="name" name="name" required placeholder="Jane Doe">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="jane@example.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Tell us about your child or ask a question..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary">Send Message</button>
+            <div id="formSuccess" class="form-success-msg" hidden>
+              Thank you for contacting us! We will get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; <span id="currentYear"></span> Grow and Learn Daycare & Preschool. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
